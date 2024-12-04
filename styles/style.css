@@ -1,0 +1,172 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9; /* Light background for a clean look */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background: #0a3d62; /* Dark blue background */
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: #ecf0f1; /* Light text color */
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3498db; /* Blue hover effect */
+    text-decoration: underline;
+}
+
+/* Home Section */
+#home {
+    background: linear-gradient(135deg, #3498db, #2ecc71); /* Gradient background */
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    border-bottom: 2px solid #111;
+}
+
+#home h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px; /* Square with rounded corners */
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styling */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd; /* Light border for separation */
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #0a3d62; /* Dark blue color for section headers */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Project Section */
+.project {
+    background: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #2ecc71; /* Green for project titles */
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: #3498db;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #3498db; /* Blue color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50; /* Dark footer */
+    color: #ecf0f1; /* Light text color */
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
